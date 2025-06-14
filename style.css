@@ -1,21 +1,20 @@
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
 body {
-    margin: 20px;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #3258BB;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* Entête */
 header {
     background-color: #3258BB;
     color: #ffffff;
-    padding: 10px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 nav {
@@ -29,12 +28,21 @@ nav {
     flex-direction: row;
 }
 
+.django-logo-header {
+    width: 180px;
+    height: auto;
+ }
+
 .btn-demo {
     background-color: #97FFCE;
     color: #3258BB;
-    padding: 20px;
     font-weight: bold;
     border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -56,6 +64,8 @@ nav {
 
 .btns-hero {
     margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .btn-rdz {
@@ -65,6 +75,21 @@ nav {
     padding: 20px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.btn-cmt-fct {
+    background-color: #3258BB;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.illus-hero-home {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -95,12 +120,21 @@ nav {
     padding: 20px;
 }
 
-.btn-fct-innov {
+.django-strengths-illus {
+    max-width: 60%;
+    height: auto;
+}
+
+.btn-fct {
     background-color: #97FFCE;
     color: #3258BB;
-    padding: 20px;
+    width: 300px;
+    height: 50px;
     font-weight: bold;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -111,11 +145,68 @@ nav {
     padding: 200px;
 }
 
-.pierre-testimonies {
+.pierre-testimony {
+    background-color: #CBFFE7;
+    margin-top: 200px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    padding: 40px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: left;
+}
+
+.pierre {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonies-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gp-ronan-txt {
+    display: flex;
+    flex-direction: row;
+}
+
+.ronan-testimony {
+    background-color: #E2E8F5;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.testimonies-texts {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pour ce bouton, voir comment faire pour que la taille soit fixe */
+#btn-voir-webinaires {
+    background-color: #97FFCE;
+    color: #3258BB;
+    font-weight: bold;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odile-testimony {
+    background-color: #94ADF0;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 30px;
 }
 
 
@@ -125,11 +216,18 @@ footer {
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+}
+
+.django-logo-footer {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
