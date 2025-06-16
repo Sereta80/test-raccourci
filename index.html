@@ -13,17 +13,24 @@
         <header>
              <nav>
                 <div class="logo-header">
-                    <a href="#"><img src="Images/Django-logo.png" alt="Django-logo" class="django-logo-header"/></a>
-                <!-- Ajouter illus bonhomme-->
+                    <a href="#"><img src="Illustrations/Django-logo.png" alt="Django-logo" class="django-logo-header"/></a>
                 </div>
-                <ul class="menu">
-                    <li><a>Qui sommes-nous ?</a></li>
-                    <li><a>Fonctionnalités</a></li>
-                    <!-- Ajouter bulle "Clic" -->
-                    <li><a>Webinaires</a></li>
-                    <!-- Ajouter bulle "Clic" -->
-                </ul>
-                <a class="btn-demo" href="#">Demander une demo</a>
+                <div class="menu">
+                    <ul>
+                        <li><a>Qui sommes-nous ?</a></li>
+                        <li>
+                            <a href="#">Fonctionnalités</a>
+                            <img src="Illustrations/bulle-clic.png"/>
+                        </li>
+                        <!-- Ajouter bulle "Clic" EN SURVOL -->
+                        <li>
+                            <a href="#">Webinaires</a>
+                            <img src="Illustrations/bulle-clic.png"/>
+                        </li>
+                        <!-- Ajouter bulle "Clic" EN SURVOL -->
+                    </ul>
+                </div>
+                <a href="#" class="btn-primary">Demander une démo</a>
              </nav>
         </header>
 
@@ -33,12 +40,12 @@
                     <h1><span>Faites entrer L'IA</span> dans le métier de <span>la recommandation touristique !</span></h1>
                     <p>Révélez tout le potentiel de votre contenu avec django ! Il répond à toutes les questions et personnalise l'expérience du voyageur.</p>
                     <div class="btns-hero">
-                        <a href="#" class="btn-rdz">Prendre rendez-vous</a>
-                        <a href="#" class="btn-cmt-fct">Comment ça fonctionne ?</a>
+                        <a href="#" class="btn-primary">Prendre rendez-vous</a>
+                        <a href="#" class="btn-secondary">Comment ça fonctionne ?</a>
                     </div>
                 </div>
                 <div class="hero-illustrations">
-                    <img src="Images/Illustration-hero-home.png" class="illus-hero-home" alt="django sur smartphone"/>
+                    <img src="Illustrations/Illustration-hero-home.png" class="illus-hero-home" alt="django sur smartphone"/>
                 </div>
             </section>
 
@@ -49,24 +56,22 @@
                 </div>
                 <div class="django-content">
                     <div class="django-strengths">
-                        <img src="Images/Django-entrainez-vos-donnees.png" class="django-strengths-illus" alt="femme avec un dossier et homme assis avec son ordinateur portable"/>
+                        <img src="Illustrations/Django-entrainez-vos-donnees.png" class="django-strengths-illus" alt="femme avec un dossier et homme assis avec son ordinateur portable"/>
                         <h2>Entraînez vos données</h2>
                         <p>Site web + roadBook + SIT APIDAE / Tourinsoft...</p>
                     </div>
                     <div class="django-strengths">
-                        <img src="Images/Django-multi-lang.png" class="django-strengths-illus" alt="femme et grand smartphone"/>
+                        <img src="Illustrations/Django-multi-lang.png" class="django-strengths-illus" alt="femme et grand smartphone"/>
                         <h2>Multi-langues</h2>
                         <p>+ 100 langues, même si vos contenus ne sont pas traduits.</p>
                     </div>
                     <div class="django-strengths">
-                        <img src="Images/Django-ss-hallu.png" class="django-strengths-illus" alt="homme qui valide"/>
+                        <img src="Illustrations/Django-ss-hallu.png" class="django-strengths-illus" alt="homme qui valide"/>
                         <h2>Sans hallucination</h2>
                         <p>Spécialement conçu pour ne jamais inventer de réponses farfelues.</p>
                     </div>
                 </div>
-                <div class="btn-fct">
-                    <a href="#" class="btn-fct-innov">Nos fonctionnalités innovantes</a>
-                </div>
+                <a href="#" class="btn-primary">Nos fonctionnalités innovantes</a>
 
             </section>
 
@@ -76,9 +81,9 @@
                         <h2>Django c'est génial bravo Accedebant !!</h2>
                         <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                     </div>
-                    <div class="pierre">
-                        <img src=/>
-                        <div class="pierre-identity">
+                    <div class="person">
+                        <img src="Avatar-illus/developer-avatar.svg"/>
+                        <div class="pierre">
                             <h3>Pierre Quiroule</h3>
                             <p>Saint-Malo Tourisme</p>
                          </div>
@@ -91,10 +96,12 @@
                                 <h2>Django c'est génial bravo Accedebant !!</h2>
                                 <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                             </div>
-                            <div class="ronan">
-                                <img src=/>
-                                <h3>Ronan le Manach</h3>
-                                <p>Côte de Granit Rose</p>
+                            <div class="person">
+                                <img src="Avatar-illus/male-avatar.svg"/>
+                                <div class="ronan">
+                                    <h3>Ronan le Manach</h3>
+                                    <p>Côte de Granit Rose</p>
+                                </div>
                             </div>
                         </div>
                         <div class="testimonies-texts">
@@ -103,7 +110,7 @@
                                 <h1>Ils ont pensé django avec nous et pour vous !</h1>
                                 <p>Ils ont traité un grand nombre de cas de figure et grâce à leur soutien, nos techniciens et data scientists ont développé la solution que vous pouvez désormais installer sur votre destinations.</p>
                             </div>
-                            <a id="btn-voir-webinaires" href="#">Voir nos webinaires</a>
+                            <a href="#" class="btn-primary">Voir nos webinaires</a>
                         </div>
                     </div>
                     <div class="odile-testimony">
@@ -111,10 +118,12 @@
                             <h2>Django c'est génial bravo Accedebant !!</h2>
                             <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                         </div>
-                         <div class="odile">
-                            <img src=/>
-                            <h3>Odile Deray</h3>
-                            <p>Courchevele</p>
+                         <div class="person">
+                            <img src="Avatar-illus/female-avatar.svg"/>
+                            <div class="odile">
+                                <h3>Odile Deray</h3>
+                                <p>Courchevele</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,12 +132,14 @@
 
         <footer>
             <div class="logo-footer">
-                <a href="#"><img src="Images/Django-logo.png" alt="Django-logo" class="django-logo-footer"/></a>
+                <a href="#"><img src="Illustrations/Django-logo.png" alt="Django-logo" class="django-logo-footer"/></a>
             </div>
-            <ul class="footer-content">
-                <li><a href=>Mentions légales</a></li>
-                <li>© 2025 Raccourci Agency</li>
-            </ul>
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li>© 2025 Raccourci Agency</li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
