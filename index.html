@@ -6,47 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Test d'intégration de l'agence Raccourci</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
              <nav>
                 <div class="logo-header">
-                    <a href="#"><img src="Illustrations/Django-logo.png" alt="Django-logo" class="django-logo-header"/></a>
+                    <img src="Illustrations/Django-logo.png" alt="Django-logo" class="django-logo-header"/>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a>Qui sommes-nous ?</a></li>
                         <li>
+                            <a>Qui sommes-nous ?</a>
+                            <img src="Illustrations/bulle-clic.png"/>
+                        </li>
+                        <li class="has-bubble">
                             <a href="#">Fonctionnalités</a>
                             <img src="Illustrations/bulle-clic.png"/>
                         </li>
-                        <!-- Ajouter bulle "Clic" EN SURVOL -->
-                        <li>
+                        <li class="has-bubble">
                             <a href="#">Webinaires</a>
                             <img src="Illustrations/bulle-clic.png"/>
                         </li>
-                        <!-- Ajouter bulle "Clic" EN SURVOL -->
                     </ul>
                 </div>
-                <a href="#" class="btn-primary">Demander une démo</a>
+                <a href="#" class="btn-primary hover-white">Demander une démo</a>
              </nav>
         </header>
 
         <main>
             <section class="hero">
                 <div class="hero-content">
-                    <h1><span>Faites entrer L'IA</span> dans le métier de <span>la recommandation touristique !</span></h1>
+                    <h1>Faites entrer L'IA <span>dans le métier de</span> la recommandation touristique !</h1>
                     <p>Révélez tout le potentiel de votre contenu avec django ! Il répond à toutes les questions et personnalise l'expérience du voyageur.</p>
                     <div class="btns-hero">
-                        <a href="#" class="btn-primary">Prendre rendez-vous</a>
-                        <a href="#" class="btn-secondary">Comment ça fonctionne ?</a>
+                        <a href="#" class="btn-primary hover-white">Prendre rendez-vous</a>
+                        <a href="#" class="btn-secondary hover-white-2nd">Comment ça fonctionne ?</a>
                     </div>
                 </div>
-                <div class="hero-illustrations">
-                    <img src="Illustrations/Illustration-hero-home.png" class="illus-hero-home" alt="django sur smartphone"/>
-                </div>
+                <img src="Illustrations/Illustration-hero-home.png" alt="django sur smartphone"/>
             </section>
 
             <section class="pts-forts-django">
@@ -56,34 +55,34 @@
                 </div>
                 <div class="django-content">
                     <div class="django-strengths">
-                        <img src="Illustrations/Django-entrainez-vos-donnees.png" class="django-strengths-illus" alt="femme avec un dossier et homme assis avec son ordinateur portable"/>
+                        <img src="Illustrations/Django-entrainez-vos-donnees.png" alt="femme avec un dossier et homme assis avec son ordinateur portable"/>
                         <h2>Entraînez vos données</h2>
                         <p>Site web + roadBook + SIT APIDAE / Tourinsoft...</p>
                     </div>
                     <div class="django-strengths">
-                        <img src="Illustrations/Django-multi-lang.png" class="django-strengths-illus" alt="femme et grand smartphone"/>
+                        <img src="Illustrations/Django-multi-lang.png" alt="femme et grand smartphone"/>
                         <h2>Multi-langues</h2>
                         <p>+ 100 langues, même si vos contenus ne sont pas traduits.</p>
                     </div>
                     <div class="django-strengths">
-                        <img src="Illustrations/Django-ss-hallu.png" class="django-strengths-illus" alt="homme qui valide"/>
+                        <img src="Illustrations/Django-ss-hallu.png" alt="homme qui valide"/>
                         <h2>Sans hallucination</h2>
                         <p>Spécialement conçu pour ne jamais inventer de réponses farfelues.</p>
                     </div>
                 </div>
-                <a href="#" class="btn-primary">Nos fonctionnalités innovantes</a>
+                <a href="#" class="btn-primary hover-blue">Nos fonctionnalités innovantes</a>
 
             </section>
 
             <section class="testimonies">
                 <div class="pierre-testimony">
-                    <div class="pierre-content">
+                    <div class="testimony-content">
                         <h2>Django c'est génial bravo Accedebant !!</h2>
                         <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                     </div>
                     <div class="person">
                         <img src="Avatar-illus/developer-avatar.svg"/>
-                        <div class="pierre">
+                        <div class="person-identity">
                             <h3>Pierre Quiroule</h3>
                             <p>Saint-Malo Tourisme</p>
                          </div>
@@ -92,35 +91,35 @@
                 <div class="testimonies-content">
                     <div class="gp-ronan-txt">
                         <div class="ronan-testimony">
-                            <div class=ronan-content>
+                            <div class=testimony-content>
                                 <h2>Django c'est génial bravo Accedebant !!</h2>
                                 <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                             </div>
                             <div class="person">
                                 <img src="Avatar-illus/male-avatar.svg"/>
-                                <div class="ronan">
+                                <div class="person-identity">
                                     <h3>Ronan le Manach</h3>
                                     <p>Côte de Granit Rose</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonies-texts">
-                            <div class="testimonies-content">
-                                <p>AGILE ET COLLABORATIF</p>
+                            <div class="testimony-description">
+                                <h2>AGILE ET COLLABORATIF</h2>
                                 <h1>Ils ont pensé django avec nous et pour vous !</h1>
                                 <p>Ils ont traité un grand nombre de cas de figure et grâce à leur soutien, nos techniciens et data scientists ont développé la solution que vous pouvez désormais installer sur votre destinations.</p>
                             </div>
-                            <a href="#" class="btn-primary">Voir nos webinaires</a>
+                            <a href="#" class="btn-primary hover-blue">Voir nos webinaires</a>
                         </div>
                     </div>
                     <div class="odile-testimony">
-                        <div class="odile-content">
+                        <div class="testimony-content">
                             <h2>Django c'est génial bravo Accedebant !!</h2>
                             <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas;</p>
                         </div>
                          <div class="person">
                             <img src="Avatar-illus/female-avatar.svg"/>
-                            <div class="odile">
+                            <div class="person-identity">
                                 <h3>Odile Deray</h3>
                                 <p>Courchevele</p>
                             </div>
