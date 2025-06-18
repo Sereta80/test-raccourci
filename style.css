@@ -248,7 +248,6 @@ nav {
     margin-bottom: 20px;
 }
 
-
 .gp-ronan-txt {
     display: flex;
     flex-direction: row;
@@ -261,7 +260,7 @@ nav {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .testimonies-texts {
@@ -287,6 +286,10 @@ nav {
     margin-bottom: 10px;
 }
 
+.testimony-description span {
+    white-space: nowrap;
+}
+
 .testimony-description p {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -302,6 +305,9 @@ nav {
     border-radius: 30px;
     margin: 10px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .person {
