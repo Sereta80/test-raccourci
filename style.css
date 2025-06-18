@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 /* Body */
@@ -366,12 +368,27 @@ footer {
         justify-content: center;
     }
 
+    .django-titles {
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
     .django-content {
         flex-direction: column;
     }
 
     .testimonies {
         flex-direction: column-reverse;
+    }
+
+    .testimony-aside,
+    .testimony-description,
+    .ronan-testimony,
+    .odile-testimony {
+        text-align: justify;
     }
 
     .testimony-aside,
