@@ -62,9 +62,9 @@ ul {
 header {
     background-color: #3258BB;
     color: #ffffff;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 2.2vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
 }
 
 nav {
@@ -76,7 +76,6 @@ nav {
 .menu ul {
    display: flex;
    flex-direction: row;
-   align-items: center;
 }
 
 .menu ul li {
@@ -86,7 +85,7 @@ nav {
 }
 
 .menu ul li a {
-    padding: 5px 20px;
+    padding: 0.3vw 1vw;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -112,15 +111,15 @@ nav {
 .hero {
     background-color: #3258BB;
     color: #ffffff;
-    margin: auto;
-    padding: 200px;
+    padding: 4vw 10vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .hero-content {
-    margin: 40px;
+    margin: 3vw;
+    gap: 1vw;
     display: flex;
     flex-direction: column;
 }
@@ -151,14 +150,10 @@ nav {
 }
 
 .btns-hero {
-    margin-top: 40px;
+    margin-top: 1.5vw;
+    gap: 1.5vw;
     display: flex;
     flex-wrap: wrap;
-}
-
-.btns-hero a {
-    margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 
@@ -167,22 +162,19 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 6vw;
+    gap: 2.5vw;
 }
 
 .django-titles {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .django-titles h1 {
     font-size: 35px;
     font-weight: 800;
-    margin: 0;
 }
 
 .django-titles p {
@@ -194,15 +186,13 @@ nav {
 .django-content {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    gap: 5vw;
 }
 
 .django-strengths {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
     text-align: center;
 }
 
@@ -226,20 +216,26 @@ nav {
 .testimonies {
     display: flex;
     flex-direction: row;
-    padding: 150px;
+    align-items: center;
+    padding: 1vw 7vw;
+    gap: 2vw;
+    margin-bottom: 7vw;
 }
 
-.pierre-testimony {
+.testimony-aside {
     background-color: #CBFFE7;
     border-radius: 30px;
-    margin-top: 200px;
-    margin-right: 20px;
-    margin-bottom: 70px;
-    padding: 40px;
+    padding: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
+    gap: 10em;
+}
+
+.testimonies-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .testimony-content h2{
@@ -251,63 +247,57 @@ nav {
 .gp-ronan-txt {
     display: flex;
     flex-direction: row;
+    gap: 2.5vw;
+    align-items: center;
 }
 
 .ronan-testimony {
     background-color: #E2E8F5;
     border-radius: 30px;
-    margin: 20px;
-    padding: 40px;
+    padding: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20em;
 }
 
 .testimonies-texts {
-    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 3em;
+}
+
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .testimony-description h2{
     color: #94ADF0;
     font-size: 20px;
     font-weight: 500;
-    margin-top: 40px;
-    margin-bottom: 10px;
 }
 
 .testimony-description h1 {
     font-size: 35px;
     font-weight: 800;
     line-height: 1.3em;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .testimony-description span {
     white-space: nowrap;
 }
 
-.testimony-description p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.testimonies-texts a {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .odile-testimony {
     background-color: #94ADF0;
     border-radius: 30px;
-    margin: 10px;
-    padding: 40px;
+    padding: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3em;
 }
 
 .person {
@@ -329,7 +319,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 2.2vw;
 }
 
 .django-logo-footer {
@@ -340,35 +330,70 @@ footer {
     align-items: center;
 }
 
-.footer-content ul li {
-    display: inline;
+
+.footer-content ul {
+    display: flex;
+    flex-direction: row;
     font-size: 14px;
     font-weight: 600;
-    padding: 20px;
+    padding: 2vw;
+    gap: 2vw;
 }
 
 .footer-content ul li a {
     color: #ffffff;
 }
 
-/* Responsive */
-/* @media screen and (max-width: 996px) {
+/* Responsive pour smartphone*/
+@media screen and (max-width: 1050px) {
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    }
     .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .btns-hero {
+        justify-content: center;
+    }
+
+    .django-content {
+        flex-direction: column;
+    }
+
+    .testimonies {
+        flex-direction: column-reverse;
+    }
+
+    .testimony-aside,
+    .ronan-testimony {
+        gap: 3em;
+    }
+
+    .gp-ronan-txt {
+        flex-direction: column-reverse;
+    }
+
+    .testimonies-texts {
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-content ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
 }
-*/
