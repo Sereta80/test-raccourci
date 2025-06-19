@@ -24,7 +24,7 @@ Reproduire fidèlement la maquette d’une page d’accueil (HTML/CSS) en respec
 Dossier racine `test-raccourci/`
 
 - `Avatar-illus/` : illustrations pour la section "testimonies"
-- `Illustrations/` : images et logo extraites de la maquette
+- `Illustrations/` : images et logo extraits de la maquette
 - `index.html` : structure de la page
 - `style.css` : feuille de style principale
 - `README.md` : ce fichier
